@@ -51,7 +51,7 @@ ul {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --bg-color-main: #3591b1;
   --text-shadow-1: -3px 4px 4px rgba(0, 0, 0, 0.25);
-  --drop-shadow-1: "";
+  --mobile-side-margin: 1rem;
 }
 
 /* System Font Stack */
@@ -88,4 +88,19 @@ body {
   font-size: 12cqw;
   color: white;
   text-shadow: var(--text-shadow-1);
+}
+
+.about-me {
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-container {
+  margin: var(--mobile-side-margin);
+}
+
+.about-links-container {
+  display: flex;
+  place-content: center;
+  gap: 16px;
 }
