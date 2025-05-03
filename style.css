@@ -174,3 +174,43 @@ header p {
   margin: 1.5rem;
   color: var(--font-body-color);
 }
+
+/* Footer */
+footer {
+  background-color: var(--bg-color-main);
+  color: white;
+  margin-top: 10rem;
+}
+
+.contact-container {
+  padding-bottom: 4rem;
+}
+
+.contact-container .heading {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.contact-container p {
+  margin: 0 1.3rem;
+}
+
+.contact-container address {
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+
+.phone p {
+  margin-bottom: 0;
+}
+
+.contact-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
