@@ -51,7 +51,12 @@ ul {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --bg-color-main: #3591b1;
   --text-shadow-1: -3px 4px 4px rgba(0, 0, 0, 0.25);
+  --drop-shadow-1: 0px 5px 15px -1px rgba(0, 0, 0, 0.3);
   --mobile-side-margin: 1rem;
+  --card-bg-1: #7f75ca;
+  --card-bg-2: #d1903d;
+  --card-bg-3: #628f4c;
+  --font-body-color: #636363;
 }
 
 /* System Font Stack */
@@ -59,9 +64,16 @@ body {
   font-family: "Roboto", var(--system-ui);
 }
 
-/* About me */
+/* General */
 .heading {
   font-family: "Playfair Display", var(--system-ui);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* About me */
+header p {
+  color: var(--font-body-color);
 }
 
 .about-img-container {
@@ -91,16 +103,74 @@ body {
 }
 
 .about-me {
-  text-align: center;
-  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .about-container {
-  margin: var(--mobile-side-margin);
+  margin: 0 var(--mobile-side-margin);
 }
 
 .about-links-container {
   display: flex;
   place-content: center;
   gap: 16px;
+  margin-top: 1rem;
+}
+
+/* Main Project cards */
+.main-heading {
+  margin: 6rem 0 1rem;
+  font-size: 2rem;
+}
+
+.project-card:nth-of-type(even) .screenshot-placeholder {
+  background-color: var(--card-bg-1);
+}
+
+.project-card:nth-of-type(odd) .screenshot-placeholder {
+  background-color: var(--card-bg-2);
+}
+
+.project-card {
+  margin: 0 var(--mobile-side-margin) 4rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--drop-shadow-1);
+}
+
+.screenshot-placeholder {
+  display: grid;
+  height: 250px;
+}
+
+.screenshot-placeholder p {
+  place-self: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 300;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.project-header .heading {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+.project-header ul {
+  display: flex;
+  gap: 12px;
+}
+
+.project-info {
+  padding-bottom: 2.5rem;
+}
+
+.project-info p {
+  margin: 1.5rem;
+  color: var(--font-body-color);
 }
