@@ -66,6 +66,11 @@ ul {
     var(--bg-color-main) 60%,
     #ffffff calc(60% + 1px)
   );
+  --bg-slant-desktop: linear-gradient(
+    172deg,
+    var(--bg-color-main) 70%,
+    #ffffff calc(70% + 1px)
+  );
 }
 
 /* System Font Stack */
@@ -334,4 +339,71 @@ footer {
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
+  /* About me */
+  .header-about {
+    background-image: var(--bg-slant-desktop);
+  }
+
+  .about-me-container {
+    display: grid;
+    grid-template:
+      "img empty-above" 50px
+      "img about" 1fr
+      "img empty-below" 50px
+      / 1fr 1.3fr;
+    margin-top: 2rem;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .about-img-container {
+    background-color: transparent;
+    grid-area: img;
+    float: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: var(--drop-shadow-1);
+  }
+
+  .about-img {
+    max-height: none;
+    min-height: 100%;
+  }
+
+  .about-text-container {
+    grid-area: about;
+    background-color: white;
+    box-shadow: var(--drop-shadow-1);
+  }
+
+  /* .about-me-container::before {
+    grid-area: empty-above;
+    content: "";
+    opacity: 0;
+  }
+
+  .about-me-container::after {
+    grid-area: empty-below;
+    content: "";
+    opacity: 0;
+  } */
+
+  .caption-about-name {
+    position: static;
+    align-items: flex-end;
+  }
+
+  .about-name {
+    position: static;
+    transform: none;
+  }
+
+  .about-links-container {
+    display: flex;
+  }
+
+  /* Main Project cards */
+  .project-card {
+    max-width: 30vw;
+  }
 }
