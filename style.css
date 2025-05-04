@@ -347,9 +347,9 @@ footer {
   .about-me-container {
     display: grid;
     grid-template:
-      "img empty-above" 50px
+      "img ." 50px
       "img about" 1fr
-      "img empty-below" 50px
+      "img ." 50px
       / 1fr 1.3fr;
     margin-top: 2rem;
     background-color: transparent;
@@ -376,18 +376,6 @@ footer {
     box-shadow: var(--drop-shadow-1);
   }
 
-  /* .about-me-container::before {
-    grid-area: empty-above;
-    content: "";
-    opacity: 0;
-  }
-
-  .about-me-container::after {
-    grid-area: empty-below;
-    content: "";
-    opacity: 0;
-  } */
-
   .caption-about-name {
     position: static;
     align-items: flex-end;
@@ -400,6 +388,8 @@ footer {
 
   .about-links-container {
     display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
   }
 
   /* Main Project cards */
