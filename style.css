@@ -178,8 +178,12 @@ header p {
 
 .project-header ul {
   display: flex;
-  margin-left: 2rem;
+  margin: 0 1rem;
   gap: 12px;
+}
+
+.card-icon {
+  min-width: 28px;
 }
 
 .project-info {
