@@ -363,14 +363,18 @@ footer {
     padding: 0;
     margin: 0;
     box-shadow: var(--drop-shadow-1);
+    width: 100%;
   }
 
   .about-img {
     max-height: none;
     min-height: 100%;
+    width: 100%;
   }
 
   .about-text-container {
+    display: flex;
+    flex-direction: column;
     grid-area: about;
     background-color: white;
     box-shadow: var(--drop-shadow-1);
@@ -386,14 +390,26 @@ footer {
     transform: none;
   }
 
+  .about-me {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
   .about-links-container {
     display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
     margin: 2rem;
+    flex-grow: 1;
   }
 
   /* Main Project cards */
   .project-card {
     max-width: 30vw;
+  }
+
+  /* Contact me */
+  footer {
+    justify-content: space-evenly;
   }
 }
