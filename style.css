@@ -283,6 +283,7 @@ footer {
 
   .about-me {
     margin: 5rem 1rem 0;
+    overflow-wrap: normal;
   }
 
   .about-links-container {
@@ -298,6 +299,11 @@ footer {
 
   .project-card {
     max-width: 40vw;
+  }
+
+  .project-header .heading {
+    margin-left: 0.5rem;
+    overflow-wrap: normal;
   }
 
   /* Contact me */
