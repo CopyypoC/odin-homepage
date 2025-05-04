@@ -299,6 +299,31 @@ footer {
   .project-card {
     max-width: 40vw;
   }
+
+  /* Contact me */
+  footer {
+    display: flex;
+  }
+
+  .contact-container .heading {
+    text-align: left;
+  }
+
+  .contact-info ul {
+    justify-content: flex-start;
+    margin-left: 1.3rem;
+  }
+
+  .contact-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+  }
+
+  .contact-img-container img {
+    max-height: 350px;
+    object-fit: cover;
+  }
 }
 
 /* Desktop */
