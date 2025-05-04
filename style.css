@@ -238,7 +238,7 @@ footer {
     background-image: var(--bg-slant-tablet);
     display: grid;
     place-items: center;
-    padding: 3rem 8rem;
+    padding: 2rem 4rem;
   }
 
   .about-me-container {
@@ -251,7 +251,12 @@ footer {
   .about-img-container {
     float: left;
     padding: 0;
-    margin: -20% 1.5rem 1rem -10%;
+    margin: -90px 1.5rem 1rem -45px;
+  }
+
+  .about-img {
+    max-height: 420px;
+    object-fit: cover;
   }
 
   .caption-about-name {
@@ -262,12 +267,14 @@ footer {
   .about-name {
     white-space: nowrap;
     position: absolute;
-    left: 70%;
-    font-size: 3rem;
+    top: 16px;
+    right: 0;
+    transform: translateX(80%);
+    font-size: clamp(2rem, 6vw, 3rem);
   }
 
   .about-me-container p {
-    margin: 1rem;
+    margin: 2rem;
   }
 
   .about-me {
